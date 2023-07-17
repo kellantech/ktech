@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="https://ktech.kellanb.repl.co/static/js/hash.js"></script>
+
+<h1>log in</h1>
+<form name="in1" id="in1" action="/login_internal">
+user ID: <input name="uid">
+password: <input name="pwd" id='pwd' type="password">
+<input type='submit' value="login">
+</form>
+
+<script>
+
+document.getElementById('in1').onsubmit = function() {
+    var txt = document.getElementById('pwd');
+    txt.value = hash(txt.value);
+  };
+
+
+</script>

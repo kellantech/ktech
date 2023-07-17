@@ -1,0 +1,21 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+<script src="https://ktech.kellanb.repl.co/static/js/hash.js" ></script>
+
+<h1>sign up to k-tech</h1>
+
+<form action="/signup-int" id='f1'>
+  name: <input name="name" id='name'><br>
+  phone number: <input name="phn" id='phn'><br>
+  email: <input name="eml" id='eml'><br>
+  password: <input name="pwd" id='pwd' type="password"><br><br>
+  <input type="submit" value="sign up!">
+</form>
+
+<script>
+
+document.getElementById('f1').onsubmit = function() {
+    var txt = document.getElementById('pwd');
+    txt.value = hash(txt.value);
+  };
+</script>

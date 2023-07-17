@@ -1,0 +1,12 @@
+#lo{
+  position:relative;
+  top:80%; 
+}
+
+.li{
+  color: black;
+  background-color: #f5f5f5;
+  font-size:25px;
+  border: 1px solid grey;
+  text-decoration: none;
+}
