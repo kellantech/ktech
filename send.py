@@ -1,6 +1,7 @@
 ## got this from https://testingonprod.com/2021/10/24/how-to-send-text-messages-with-python-for-free/
 
 
+
 import smtplib
 CARRIERS = {
     "att": "@mms.att.net",
